@@ -13,7 +13,7 @@ Always surround your string in single quote (') characters. For example ‘Hello
 ## String Concatenation and Replication
 The meaning of an operator may change based on the data types of the values next to it. For example, + is the addition operator when it operates on two integers or floating-point values. However, when + is used on two string values, it joins the strings as the string concatenation operator. 
 
-Example:
+**Example:**
 
 'Alice' + 'Bob'
 
@@ -23,7 +23,7 @@ If you try to use the + operator on a string and an integer value, Python will
 
 The * operator multiplies two integer or floating-point values. But when the * operator is used on one string value and one integer value, it becomes the string replication operator.  
 
-Example: 
+**Example:**
 
 'Alice' * 5
 

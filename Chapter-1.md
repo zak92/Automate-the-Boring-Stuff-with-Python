@@ -1,4 +1,4 @@
 ## PYTHON BASICS
 
 # Math Operators in Python
-![Operators](images/yaktocat.png)
+![Operators](https:///images/yaktocat.png)

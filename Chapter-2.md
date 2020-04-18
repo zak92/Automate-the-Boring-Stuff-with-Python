@@ -6,4 +6,9 @@ The Boolean data type has only two values: True and False. They always start wit
 spam = True
 print(spam)
 
-Output: True
+**Output**: True
+
+## Comparison Operators
+Comparison operators, compare two values and evaluate down to a single Boolean value.
+
+![Comparison Opertors]()

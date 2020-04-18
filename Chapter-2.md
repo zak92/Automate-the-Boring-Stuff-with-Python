@@ -50,6 +50,19 @@ While only one of the if or else clauses will execute, you may have a case where
 
 ![if elif else]()
 
+## while Loop Statements
+You can make a block of code execute over and over again using a while statement. The code in a while clause will be executed as long as the while statement’s condition is True.
+
+## break Statements
+There is a shortcut to getting the program execution to break out of a while loop’s clause early. If the execution reaches a break statement, it immediately exits the while loop’s clause.
+
+## continue Statements
+Like break statements, continue statements are used inside loops. When the program execution reaches a continue statement, the program execution immediately jumps back to the start of the loop and reevaluates the loop’s condition. (This is also what happens when the execution reaches the end of the loop.)
+
+![while, break, continue]()
+
+
+
 
 
 

@@ -31,3 +31,17 @@ Output will be 'AliceAliceAliceAliceAlice'
 
 The * operator can be used with only two numeric values (for multiplication), or one string value and one integer value (for string replication).  
 
+## Storing Values in Variables with Assignment Statements
+An assignment statement consists of a variable name, an equal sign (called the assignment operator), and the value to be stored. If you enter the assignment statement spam = 42, then a variable named spam will have the integer value 42 stored in it. 
+
+## Variable Names
+A good variable name describes the data it contains. A a descriptive name will help make your code more readable. 
+You can name a variable anything as long as it obeys the following three rules:
+    • It can be only one word with no spaces.
+    • It can use only letters, numbers, and the underscore (_) character.
+    • It can’t begin with a number.
+
+## Comments
+The following line is called a comment.
+#This program says hello and asks for my name.
+Python ignores comments, and you can use them to write notes or remind yourself what the code is trying to do.

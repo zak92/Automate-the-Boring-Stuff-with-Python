@@ -37,6 +37,7 @@ An assignment statement consists of a variable name, an equal sign (called the 
 ## Variable Names
 A good variable name describes the data it contains. A a descriptive name will help make your code more readable. 
 You can name a variable anything as long as it obeys the following three rules:
+
 • It can be only one word with no spaces.
 
 • It can use only letters, numbers, and the underscore (_) character.
@@ -59,3 +60,12 @@ The input() function waits for the user to type some text on the keyboard and 
 myName = input()
 
 This function call evaluates to a string equal to the user’s text, and the line of code assigns the myName variable to this string value.
+
+## The len() Function
+You can pass the len() function a string value (or a variable containing a string), and the function evaluates to the integer value of the number of characters in that string. 
+
+### Example
+len('hello')
+The output is 5 since there are  letters in the word hello
+
+

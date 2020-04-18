@@ -49,3 +49,13 @@ The following line is called a comment.
 #This program says hello and asks for my name.
 
 Python ignores comments, and you can use them to write notes or remind yourself what the code is trying to do.
+
+## The print() Function
+The print() function displays the string value inside its parentheses on the screen. 
+
+## The input() Function
+The input() function waits for the user to type some text on the keyboard and press ENTER. 
+
+myName = input()
+
+This function call evaluates to a string equal to the user’s text, and the line of code assigns the myName variable to this string value.

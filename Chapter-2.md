@@ -68,9 +68,38 @@ The while loop keeps looping while its condition is True, but what if you want t
 The first argument will be where the for loop’s variable starts, and the second argument will be up to, but not including, the number to stop at. The third argument is the amount that the variable is increased by after each iteration. The start and step arguments are optional. If the start argument is not specified, it will begin at 0. The stop argument will be up to, but not including, the number to stop at. You can even use a negative number for the step argument to make the for loop count down instead of up.
 
 ![for and range]()
+
 So calling range(0, 10, 2) will count from zero to eight by intervals of two. The output will be 0, 2, 4, 6, 8
 
 ## Importing Modules
+Python also comes with a set of modules called the standard library. Each module is a Python program that contains a related group of functions that can be embedded in your programs. For example, the math module has mathematics-related functions, the random module has random number-related functions, and so on.
+
+Before you can use the functions in a module, you must import the module with an import statement. In code, an import statement consists of the following:
+
+* The import keyword
+* The name of the module
+* Optionally, more module names, as long as they are separated by commas
+
+Here’s an example of an import statement that imports four different modules:
+
+import random, sys, os, math
+
+Now we can use any of the functions in these four modules in our program.
+
+## Ending a Program Early with the sys.exit() Function
+
+The last flow control concept to cover is how to terminate the program. Programs always terminate if the program execution reaches the bottom of the instructions. However, you can cause the program to terminate, or exit, before the last instruction by calling the sys.exit() function. Since this function is in the sys module, you have to import sys before your program can use it.
+
+### Example
+
+![sys.exit]()
+
+The user must enter exit in order to stop the program.
+
+
+
+
+
 
 
 

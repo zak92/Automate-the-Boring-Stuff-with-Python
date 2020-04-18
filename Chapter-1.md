@@ -76,10 +76,14 @@ str(29)
 
 The str(), int(), and float() functions will evaluate to the string, integer, and floating-point forms of the value you pass, respectively. 
 
-## Exampeles
+## Examples
 1. int('42') will evaluate to 42
 2. float('3.14') will evaluate to 3.14
 3. float(10) will evaluate to 10.0
+4. int(7.7) will evaluate to 7
+
+The str() function is handy when you have an integer or float that you want to concatenate to a string. The int() function is also helpful if you have a number as a string value that you want to use in some mathematics. For example, the input() function always returns a string, even if the user enters a number.  The int() function is also useful if you need to round a floating-point number down. 
+
 
 
 

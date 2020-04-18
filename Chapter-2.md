@@ -14,12 +14,9 @@ Comparison operators, compare two values and evaluate down to a single Boolean v
 ![Comparison Operators]()
 
 ### Examples
-1. 42 == 99   
-**Output: False**
-2. 2 != 2
-**Output: False**
-3. 'dog' != 'cat'
-**Output: True**
+1. 42 == 99        **Output: False**
+2. 2 != 2          **Output: False**
+3. 'dog' != 'cat   **Output: True**
 
 ## Boolean Operators
 The three Boolean operators (and, or, and not) are used to compare Boolean values.

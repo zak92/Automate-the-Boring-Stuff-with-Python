@@ -66,6 +66,17 @@ You can pass the len() function a string value (or a variable containing a str
 
 ### Example
 len('hello')
-The output is 5 since there are  letters in the word hello
+
+The output is 5 since there are  letters in the word hello.
+
+## The str(), int(), and float() Functions
+If you want to concatenate an integer such as 29 with a string to pass to print(), you’ll need to get the value '29', which is the string form of 29. 
+
+str(29)
+
+The str(), int(), and float() functions will evaluate to the string, integer, and floating-point forms of the value you pass, respectively. 
+
+
+
 
 

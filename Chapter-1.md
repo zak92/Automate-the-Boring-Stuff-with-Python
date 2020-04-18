@@ -76,6 +76,10 @@ str(29)
 
 The str(), int(), and float() functions will evaluate to the string, integer, and floating-point forms of the value you pass, respectively. 
 
+## Exampeles
+1. int('42') will evaluate to 42
+2. float('3.14') will evaluate to 3.14
+3. float(10) will evaluate to 10.0
 
 
 

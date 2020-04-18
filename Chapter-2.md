@@ -32,3 +32,24 @@ The and and or operators always take two Boolean values (or expressions)
 2. (1 == 2) or (2 == 2)
 **Output: True**
 
+## Blocks of Code
+Lines of Python code can be grouped together in blocks. You can tell when a block begins and ends from the indentation of the lines of code. There are three rules for blocks.
+
+* Blocks begin when the indentation increases.
+* Blocks can contain other blocks.
+* Blocks end when the indentation decreases to zero or to a containing block’s indentation.
+
+## if Statements
+The most common type of flow control statement is the if statement. An if statement’s clause (that is, the block following the if statement) will execute if the statement’s condition is True. The clause is skipped if the condition is False.
+
+## else statements
+An if clause can optionally be followed by an else statement. The else clause is executed only when the if statement’s condition is False. In plain English, an else statement could be read as, “If this condition is true, execute this code. Or else, execute that code.” 
+
+## elif Statements
+While only one of the if or else clauses will execute, you may have a case where you want one of many possible clauses to execute. The elif statement is an “else if” statement that always follows an if or another elif statement. It provides another condition that is checked only if all of the previous conditions were False. 
+
+![if elif else]()
+
+
+
+

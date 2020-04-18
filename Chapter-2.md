@@ -61,8 +61,16 @@ Like break statements, continue statements are used inside loops. When the progr
 
 ![while, break, continue]()
 
+## for Loops and the range() Function
+The while loop keeps looping while its condition is True, but what if you want to execute a block of code only a certain number of times? You can do this with a for loop statement and the range() function.
 
+## The Starting, Stopping, and Stepping Arguments to range()
+The first argument will be where the for loop’s variable starts, and the second argument will be up to, but not including, the number to stop at. The third argument is the amount that the variable is increased by after each iteration. The start and step arguments are optional. If the start argument is not specified, it will begin at 0. The stop argument will be up to, but not including, the number to stop at. You can even use a negative number for the step argument to make the for loop count down instead of up.
 
+![for and range]()
+So calling range(0, 10, 2) will count from zero to eight by intervals of two. The output will be 0, 2, 4, 6, 8
+
+## Importing Modules
 
 
 

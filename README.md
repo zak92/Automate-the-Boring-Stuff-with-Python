@@ -6,7 +6,7 @@ This repository contains chapter summaries of the book - "Automate the Boring St
 
 My intention is to learn basic python automation skills and thereafter build on my learning foundation by developing a wider array of more advanced python automation tools.
 
-[Chapter 1 ]()
-[Chapter 2 ]()
-[Chapter 3 ]()
+[Chapter 1 ]()\
+[Chapter 2 ]()\
+[Chapter 3 ]()\
 [Chapter 4 ]()

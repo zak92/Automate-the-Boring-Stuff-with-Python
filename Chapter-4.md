@@ -36,7 +36,7 @@ The len() function will return the number of values that are in a list value pas
 ### Example
 spam = ['cat', 'dog', 'moose']
 
-len(spam)/
+len(spam)\
 3
 
 ## Changing Values in a List with Indexes

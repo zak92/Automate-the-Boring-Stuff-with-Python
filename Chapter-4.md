@@ -36,9 +36,17 @@ The len() function will return the number of values that are in a list value pas
 ### Example
 spam = ['cat', 'dog', 'moose']
 
-len(spam)
+len(spam)<Enter>
 3
 
+## Changing Values in a List with Indexes
+You can also use an index of a list to change the value at that index.
+
+### Example
+spam = ['cat', 'bat', 'rat', 'elephant']
+>>> spam[1] = 'aardvark'
+>>> spam
+['cat', 'aardvark', 'rat', 'elephant']
 
 
 

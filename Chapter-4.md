@@ -78,13 +78,15 @@ Index 2 in supplies is: flamethrowers\
 Index 3 in supplies is: binders\
 
 ## The in and not in Operators
-You can determine whether a value is or isn’t in a list with the in and not in operators.
-## Examples
-'howdy' in ['hello', 'hi', 'howdy', 'heyas']\
-Output: True
+![in not in]()
 
-spam = ['hello', 'hi', 'howdy', 'heyas']\
-'howdy' not in spam\
-Output: False
+## The Multiple Assignment Trick
+The multiple assignment trick (technically called tuple unpacking) is a shortcut that lets you assign multiple variables with the values in a list in one line of code. So instead of doing this:
+
+![multiple assignment]()
+
+## Using the enumerate() Function with Lists
+
+
 
 

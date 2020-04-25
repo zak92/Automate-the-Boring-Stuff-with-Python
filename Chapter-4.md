@@ -34,8 +34,7 @@ Output: ['cat', 'bat']
 ## Getting a List’s Length with the len() Function
 The len() function will return the number of values that are in a list value passed to it, just like it can count the number of characters in a string value.
 ### Example
-spam = ['cat', 'dog', 'moose']
-
+spam = ['cat', 'dog', 'moose']\
 len(spam)\
 3
 
@@ -43,10 +42,9 @@ len(spam)\
 You can also use an index of a list to change the value at that index.
 
 ### Example
-spam = ['cat', 'bat', 'rat', 'elephant']
->>> spam[1] = 'aardvark'
->>> spam
-['cat', 'aardvark', 'rat', 'elephant']
+spam = ['cat', 'bat', 'rat', 'elephant']\
+spam[1] = 'aardvark'\
+spam = ['cat', 'aardvark', 'rat', 'elephant']
 
 
 

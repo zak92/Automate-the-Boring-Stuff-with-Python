@@ -46,5 +46,45 @@ spam = ['cat', 'bat', 'rat', 'elephant']\
 spam[1] = 'aardvark'\
 spam = ['cat', 'aardvark', 'rat', 'elephant']
 
+## List Concatenation and List Replication
+The + operator combines two lists to create a new list value and the * operator can be used with a list and an integer value to replicate the list.
+
+### Examples
+[1, 2, 3] + ['A', 'B', 'C']\
+[1, 2, 3, 'A', 'B', 'C']
+
+['X', 'Y', 'Z'] * 3\
+['X', 'Y', 'Z', 'X', 'Y', 'Z', 'X', 'Y', 'Z']
+
+## Removing Values from Lists with del Statements
+The del statement will delete values at an index in a list. All of the values in the list after the deleted value will be moved up one index.
+
+### Example
+spam = ['cat', 'bat', 'rat', 'elephant']\
+del spam[2]\
+spam = ['cat', 'bat', 'elephant']
+
+## Using for Loops with Lists
+A common Python technique is to use range(len(someList)) with a for loop to iterate over the indexes of a list.\
+## Example 
+supplies = ['pens', 'staplers', 'flamethrowers', 'binders']\
+for i in range(len(supplies)):\
+    print('Index ' + str(i) + ' in supplies is: ' + supplies[i])
+
+Output:\
+Index 0 in supplies is: pens\
+Index 1 in supplies is: staplers\
+Index 2 in supplies is: flamethrowers\
+Index 3 in supplies is: binders\
+
+## The in and not in Operators
+You can determine whether a value is or isn’t in a list with the in and not in operators.
+## Examples
+'howdy' in ['hello', 'hi', 'howdy', 'heyas']\
+Output: True
+
+spam = ['hello', 'hi', 'howdy', 'heyas']\
+'howdy' not in spam\
+Output: False
 
 

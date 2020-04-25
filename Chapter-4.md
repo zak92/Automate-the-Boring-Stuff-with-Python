@@ -102,15 +102,15 @@ Index 3 in supplies is: binders
 The random module has a couple functions that accept lists for arguments. The random.choice() function will return a randomly selected item from the list.
 
 ### Example
-import random/
-pets = ['Dog', 'Cat', 'Moose']/
-random.choice(pets)/
+import random\
+pets = ['Dog', 'Cat', 'Moose']\
+random.choice(pets)\
 Output: 'Dog'
 
 The random.shuffle() function will reorder the items in a list. This function modifies the list in place, rather than returning a new list.
 
 ### Example
-mport random\
+import random\
 people = ['Alice', 'Bob', 'Carol', 'David']\
 random.shuffle(people)\
 Output: ['Carol', 'David', 'Alice', 'Bob']
@@ -193,7 +193,7 @@ spam = ['cat', 'dog', 'moose']\
 spam.reverse()\
 Output: ['moose', 'dog', 'cat']
 
-
+## Sequence Data Types
 
 
 

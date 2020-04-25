@@ -126,8 +126,8 @@ A method is the same thing as a function, except it is “called on” a value. 
 List values have an index() method that can be passed a value, and if that value exists in the list, the index of the value is returned. If the value isn’t in the list, then Python produces a ValueError error. 
 
 ### Example 
-spam = ['hello', 'hi', 'howdy', 'heyas']/
-spam.index('hello')/
+spam = ['hello', 'hi', 'howdy', 'heyas'\/
+spam.index('hello')\
 Output: 0
 
 When there are duplicates of the value in the list, the index of its first appearance is returned.
@@ -136,29 +136,62 @@ When there are duplicates of the value in the list, the index of its first appea
 To add new values to a list, use the append() and insert() methods.
 
 ### Example
-spam = ['cat', 'dog', 'bat']/
-spam.append('moose')/
+spam = ['cat', 'dog', 'bat']\
+spam.append('moose')\
 Output: ['cat', 'dog', 'bat', 'moose']
 
 The previous append() method call adds the argument to the end of the list. The insert() method can insert a value at any index in the list. The first argument to insert() is the index for the new value, and the second argument is the new value to be inserted. 
 
 ### Example
-spam = ['cat', 'dog', 'bat']/
-spam.insert(1, 'chicken')/
+spam = ['cat', 'dog', 'bat']\
+spam.insert(1, 'chicken')\
 output: ['cat', 'chicken', 'dog', 'bat']
 
 ### Removing Values from Lists with the remove() Method
 The remove() method is passed the value to be removed from the list it is called on.
 
 ### Example
-spam = ['cat', 'bat', 'rat', 'elephant']/
-spam.remove('bat')/
+spam = ['cat', 'bat', 'rat', 'elephant']\
+spam.remove('bat')\
 Output: ['cat', 'rat', 'elephant']
 
 If the value appears multiple times in the list, only the first instance of the value will be removed./
 The del statement is good to use when you know the index of the value you want to remove from the list. The remove() method is useful when you know the value you want to remove from the list.
 
+### Sorting the Values in a List with the sort() Method
+Lists of number values or lists of strings can be sorted with the sort() method.
 
+### Example
+spam = [2, 5, 3.14, 1, -7]\
+spam.sort()\
+Output: [-7, 1, 2, 3.14, 5]
+
+spam = ['ants', 'cats', 'dogs', 'badgers', 'elephants']\
+spam.sort()\
+Output: ['ants', 'badgers', 'cats', 'dogs', 'elephants']
+
+You can also pass True for the reverse keyword argument to have sort() sort the values in reverse order/.
+spam.sort(reverse=True)
+Output: ['elephants', 'dogs', 'cats', 'badgers', 'ants']
+
+There are three things you should note about the sort() method. First, the sort() method sorts the list in place; don’t try to capture the return value by writing code like spam = spam.sort().\
+Second, you cannot sort lists that have both number values and string values in them, since Python doesn’t know how to compare these values.\
+Third, sort() uses “ASCIIbetical order” rather than actual alphabetical order for sorting strings. This means uppercase letters come before lowercase letters. Therefore, the lowercase a is sorted so that it comes after the uppercase Z. 
+
+If you need to sort the values in regular alphabetical order, pass str.lower for the key keyword argument in the sort() method call.
+### Example
+spam = ['a', 'z', 'A', 'Z']\
+spam.sort(key=str.lower)\
+Output: ['a', 'A', 'z', 'Z']
+
+This causes the sort() function to treat all the items in the list as if they were lowercase without actually changing the values in the list.
+
+### Reversing the Values in a List with the reverse() Method
+If you need to quickly reverse the order of the items in a list, you can call the reverse() list method. 
+### Example
+spam = ['cat', 'dog', 'moose']\
+spam.reverse()\
+Output: ['moose', 'dog', 'cat']
 
 
 

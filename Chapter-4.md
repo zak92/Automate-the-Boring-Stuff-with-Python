@@ -86,6 +86,90 @@ The multiple assignment trick (technically called tuple unpacking) is a shortcut
 ![multiple assignment]()
 
 ## Using the enumerate() Function with Lists
+Instead of using the range(len(someList)) technique with a for loop to obtain the integer index of the items in the list, you can call the enumerate() function instead. On each iteration of the loop, enumerate() will return two values: the index of the item in the list, and the item in the list itself.
+
+### Example
+supplies = ['pens', 'staplers', 'flamethrowers', 'binders']/
+for index, item in enumerate(supplies):/
+    print('Index ' + str(index) + ' in supplies is: ' + item)/
+
+Index 0 in supplies is: pens/
+Index 1 in supplies is: staplers/
+Index 2 in supplies is: flamethrowers/
+Index 3 in supplies is: binders
+
+## Using the random.choice() and random.shuffle() Functions with Lists
+The random module has a couple functions that accept lists for arguments. The random.choice() function will return a randomly selected item from the list.
+
+### Example
+import random/
+pets = ['Dog', 'Cat', 'Moose']/
+random.choice(pets)/
+Output: 'Dog'
+
+The random.shuffle() function will reorder the items in a list. This function modifies the list in place, rather than returning a new list.
+
+### Example
+mport random\
+people = ['Alice', 'Bob', 'Carol', 'David']\
+random.shuffle(people)\
+Output: ['Carol', 'David', 'Alice', 'Bob']
+
+## Augmented Assignment Operators
+
+![Augmented Assignment]()
+
+## Methods
+A method is the same thing as a function, except it is “called on” a value. For example, if a list value were stored in spam, you would call the index() list method on that list like so: spam.index('hello').Each data type has its own set of methods. The list data type, for example, has several useful methods for finding, adding, removing, and otherwise manipulating values in a list.
+
+### Finding a Value in a List with the index() Method
+List values have an index() method that can be passed a value, and if that value exists in the list, the index of the value is returned. If the value isn’t in the list, then Python produces a ValueError error. 
+
+### Example 
+spam = ['hello', 'hi', 'howdy', 'heyas']/
+spam.index('hello')/
+Output: 0
+
+When there are duplicates of the value in the list, the index of its first appearance is returned.
+
+### Adding Values to Lists with the append() and insert() Methods
+To add new values to a list, use the append() and insert() methods.
+
+### Example
+spam = ['cat', 'dog', 'bat']/
+spam.append('moose')/
+Output: ['cat', 'dog', 'bat', 'moose']
+
+The previous append() method call adds the argument to the end of the list. The insert() method can insert a value at any index in the list. The first argument to insert() is the index for the new value, and the second argument is the new value to be inserted. 
+
+### Example
+spam = ['cat', 'dog', 'bat']/
+spam.insert(1, 'chicken')/
+output: ['cat', 'chicken', 'dog', 'bat']
+
+### Removing Values from Lists with the remove() Method
+The remove() method is passed the value to be removed from the list it is called on.
+
+### Example
+spam = ['cat', 'bat', 'rat', 'elephant']/
+spam.remove('bat')/
+Output: ['cat', 'rat', 'elephant']
+
+If the value appears multiple times in the list, only the first instance of the value will be removed./
+The del statement is good to use when you know the index of the value you want to remove from the list. The remove() method is useful when you know the value you want to remove from the list.
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

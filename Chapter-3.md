@@ -65,7 +65,8 @@ When code in a try clause causes an error, the program execution immediately mov
 
 Functions are the primary way to compartmentalize your code into logical groups. Since the variables in functions exist in their own local scopes, the code in one function cannot directly affect the values of variables in other functions. This limits what code could be changing the values of your variables, which can be helpful when it comes to debugging your code.
 
-
+## Practice Projects
+[The Collatz Sequence]()
 
 
 

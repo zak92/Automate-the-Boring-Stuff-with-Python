@@ -194,6 +194,15 @@ spam.reverse()\
 Output: ['moose', 'dog', 'cat']
 
 ## Sequence Data Types
+The Python sequence data types include lists, strings, range objects returned by range(), and tuples. Many of the things you can do with lists can also be done with strings and other values of sequence types: indexing; slicing; and using them with for loops, with len(), and with the in and not in operators. 
+
+## Examples
+name = 'Zophie'\
+name[0]\
+Output: 'Z'
+
+'Zo' in name\
+Output: True
 
 
 

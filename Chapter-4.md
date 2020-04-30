@@ -196,7 +196,7 @@ Output: ['moose', 'dog', 'cat']
 ## Sequence Data Types
 The Python sequence data types include lists, strings, range objects returned by range(), and tuples. Many of the things you can do with lists can also be done with strings and other values of sequence types: indexing; slicing; and using them with for loops, with len(), and with the in and not in operators. 
 
-## Examples
+### Examples
 name = 'Zophie'\
 name[0]\
 Output: 'Z'
@@ -204,7 +204,68 @@ Output: 'Z'
 'Zo' in name\
 Output: True
 
+## Mutable and Immutable Data Types
+A list value is a mutable data type: it can have values added, removed, or changed. However, a string is immutable: it cannot be changed.The proper way to “mutate” a string is to use slicing and concatenation to build a new string by copying from parts of the old string. Tuples are immutable.
 
+## The Tuple Data Type
+The tuple data type is almost identical to the list data type, except in two ways. First, tuples are typed with parentheses, (), instead of square brackets, []. But the main way that tuples are different from lists is that tuples, like strings, are immutable. Tuples cannot have their values modified, appended, or removed. 
+
+### Example 
+eggs = ('hello', 42, 0.5)\
+eggs[0]\
+Output: 'hello'
+
+If you have only one value in your tuple, you can indicate this by placing a trailing comma after the value inside the parentheses. Otherwise, Python will think you’ve just typed a value inside regular parentheses. The comma is what lets Python know this is a tuple value. 
+
+### Example 
+type(('hello',))\
+<class 'tuple'>
+
+type(('hello'))\
+<class 'str'>
+
+You can use tuples to convey to anyone reading your code that you don’t intend for that sequence of values to change. If you need an ordered sequence of values that never changes, use a tuple.\
+A second benefit of using tuples instead of lists is that, because they are immutable and their contents don’t change, Python can implement some optimizations that make code using tuples slightly faster than code using lists.
+
+## Converting Types with the list() and tuple() Functions
+The functions list() and tuple() will return list and tuple versions of the values passed to them.
+
+![tuple-list]()
+
+## Identity and the id() Function
+All values in Python have a unique identity that can be obtained with the id() function. 
+
+## Example 
+id('Howdy') #The returned number will be different on your machine.\
+Output: 44491136
+
+When Python runs id('Howdy'), it creates the 'Howdy' string in the computer’s memory. The numeric memory address where the string is stored is returned by the id() function. Python picks this address based on which memory bytes happen to be free on your computer at the time, so it’ll be different each time you run this code.\
+Like all strings, 'Howdy' is immutable and cannot be changed. If you “change” the string in a variable, a new string object is being made at a different place in memory, and the variable refers to this new string.
+
+### Example
+bacon = 'Hello'\
+id(bacon)\
+44491136\
+bacon += ' world!' # A new string is made from 'Hello' and ' world!'.\
+id(bacon) # bacon now refers to a completely different string.\
+44609712
+
+However, lists can be modified because they are mutable objects. The append() method doesn’t create a new list object; it changes the existing list object. We call this “modifying the object in-place.”
+
+### Example
+![id]()
+
+If two variables refer to the same list and the list value itself changes, both variables are affected because they both refer to the same list. The append(), extend(), remove(), sort(), reverse(), and other list methods modify their lists in place.
+
+## The copy Module’s copy() and deepcopy() Functions
+Although passing around references is often the handiest way to deal with lists and dictionaries, if the function modifies the list or dictionary that is passed, you may not want these changes in the original list or dictionary value. For this, Python provides a module named copy that provides both the copy() and deepcopy() functions. The first of these, copy.copy(), can be used to make a duplicate copy of a mutable value like a list or dictionary, not just a copy of a reference. 
+
+### Example 
+![copy]()
+
+Now the spam and cheese variables refer to separate lists, which is why only the list in cheese is modified when you assign 42 at index 1.
+
+If the list you need to copy contains lists, then use the copy.deepcopy() function instead of copy.copy(). The deepcopy() function will copy these inner lists as well.
 
 
 

@@ -268,8 +268,10 @@ Now the spam and cheese variables refer to separate lists, which is why only the
 If the list you need to copy contains lists, then use the copy.deepcopy() function instead of copy.copy(). The deepcopy() function will copy these inner lists as well.
 
 
-
-
+## Practice Projects
+[Comma Code]()\
+[Coin Flip Streaks]()\
+[Character Picture Grid]()
 
 
 
